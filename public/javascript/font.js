@@ -45,7 +45,7 @@ fontApp = {
                     '<div class="alert alert-info font-app-alert" role="alert">변환이 완료되었습니다.</div>' +
                     '<div class="bs-callout bs-callout-info">' +
                         '<h4>How To Use WebFont</h4>' +
-                        "<p>@font-face {<br>&nbsp;&nbsp;font-family: '" + filename + "';<br>&nbsp;&nbsp;src:url('FontFilePath'/" + filename + ".woff') format('woff')<br>}<br>." + filename + "{<br>&nbsp;&nbsp;font-family: '" + filename + "';<br>}</p>" +
+                        "<p>@font-face {<br>&nbsp;&nbsp;font-family: '" + filename + "';<br>&nbsp;&nbsp;src:url('FontFilePath'/" + filename + ".woff') format('woff')<br>}<br>." + filename + "{<br>&nbsp;&nbsp;font-family: '" + filename + "';<br>}<br><h4><a href='#'>Webfont Download</a></h4></p>" +
                     '</div>';
                 } else {
                     '<div class="alert alert-danger font-app-alert" role="alert">변환을 실패하였습니다.</div>' +

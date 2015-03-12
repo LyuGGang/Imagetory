@@ -27,6 +27,7 @@ imageApp = {
     addEventListener : function() {
         this.actionSubmitFontBtnListener();
         this.actionRequestMoreImageBtnListener();
+        this.actionRemoveRequestItemtnListener();
     },
 
     actionSubmitFontBtnListener : function() {
@@ -67,12 +68,17 @@ imageApp = {
     },
 
     actionRequestMoreImageBtnListener : function() {
-//        var childCnt = imageApp._cacheElement.imageFormChildDiv.length();
-//        alert(childCnt);
+        var requestImageItemCnt = imageApp._cacheElement.imageFormChildDiv.length;
         var imageForm = imageApp._cacheElement.imageForm,
             requestItem = imageApp._cacheElement.requestImageItem;
         $('[data-event-request-more-image]').on('click', function() {
             imageForm.append(requestItem);
+        })
+    },
+
+    actionRemoveRequestItemtnListener : function() {
+        $('[data-event-remove-request-image-item]').on('click', function() {
+            this.parentNode.remove();
         })
     }
 }
