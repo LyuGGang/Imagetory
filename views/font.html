@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <title></title>
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../public/vendor/bootstrap-fileinput/css/fileinput.css"/>
         <link rel="stylesheet" href="../public/vendor/bootstrap-3.3.2/css/docs.min.css"/>
         <link rel="stylesheet" href="../public/stylesheets/common.css"/>
+        <link rel="stylesheet" href="../public/stylesheets/font.css"/>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -38,15 +39,16 @@
                     <form method="POST" ENCTYPE="multipart/form-data" action="#" data-form-request-font>
                         <table width="500" border="0" align="center" bgcolor="dddddd" class="table table-bordered">
                             <tr>
-                                <td width="600" colspan="2" align="center"><b>파일 업로드 기능</b></td>
+                                <td width="600" colspan="2" align="center"><b>tff to woff</b></td>
                             </tr>
                             <tr>
-                                <td width="100" align="center">파일명</td>
+                                <td width="100" align="center">Font Name</td>
                                 <td width="500"> <input type="file" name="uploadfont"></td>
                             </tr>
                             <tr>
                                 <td align="center" colspan="2">
-                                    <input type="button" value="전송" data-event-request-font> <input type="reset" value="취소">
+                                    <input type="button" class="btn btn-primary" value="변환 요청" data-event-request-font>
+                                    <input type="reset" class="btn btn-default" value="취소">
                                 </td>
                             </tr>
                         </table>
@@ -74,6 +76,6 @@
         <script src="../public/vendor/bootstrap-fileinput/js/fileinput.js"></script>
         <script src="../public/vendor/jquery-form-plugin/jquery.form.js"></script>
 
-        <script src="../public/javascript/common.js"></script>
+        <script src="../public/javascript/font.js"></script>
     </body>
 </html>
